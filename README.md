@@ -8,6 +8,7 @@ L1BC
 Snake game is one of the most popular arcade games of all time. In this game, the main objective of the player is to catch the maximum number of foods without hitting itself. The more foods that the snake eats, the longer it'll be. If the snake hit itself, then the game will restart, and the snake will reset just like when the game started. 
 
 # Use-Case Diagram
+![use-case diagram](https://user-images.githubusercontent.com/114073725/212554563-bb7f7e8a-ae99-40de-b31c-e2d8c43124a0.jpeg)
 
 # Activity Diagram
 
@@ -16,6 +17,9 @@ Snake game is one of the most popular arcade games of all time. In this game, th
 # Modules
 
 # Essential Programming
+  Class : For the snake, food, and main function to run the game.
+  Funciton : Drawing the snake, randomizing food position, etc.
+  Loops : Help running the game (like in the main)
 
 # Screenshot of the Application
 ![start game](https://user-images.githubusercontent.com/114073725/212553453-55e6d13c-13fa-4bb5-912e-90b9991cff9e.jpeg) 
