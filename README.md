@@ -24,9 +24,8 @@ Snake game is one of the most popular arcade games of all time. In this game, th
 # Video Demo
 
 
+https://user-images.githubusercontent.com/114073725/212552278-05d8e731-47a2-4227-832a-61c6f4c9d862.mp4
 
-
-https://user-images.githubusercontent.com/114073725/212552052-dba7d857-8550-4c26-bc6c-82bd67339311.mp4
 
 
 
