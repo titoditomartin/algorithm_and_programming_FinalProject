@@ -11,6 +11,7 @@ Snake game is one of the most popular arcade games of all time. In this game, th
 ![use-case diagram](https://user-images.githubusercontent.com/114073725/212554563-bb7f7e8a-ae99-40de-b31c-e2d8c43124a0.jpeg)
 
 # Activity Diagram
+![Activity diagram](https://user-images.githubusercontent.com/114073725/212556517-ede11afc-d842-4b35-8006-759b18c7accc.jpeg)
 
 # Class Diagram
 
