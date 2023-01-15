@@ -21,13 +21,21 @@ Snake game is one of the most popular arcade games of all time. In this game, th
 ![start game](https://user-images.githubusercontent.com/114073725/212553453-55e6d13c-13fa-4bb5-912e-90b9991cff9e.jpeg) 
 This picture shows when the game starts
 
+
+
 ![before losing](https://user-images.githubusercontent.com/114073725/212553470-38076f9b-8642-493b-b944-a0141bdaf501.jpeg)
 This picture shows when the player has a score
+
+
 
 ![end game](https://user-images.githubusercontent.com/114073725/212553473-d7a1ff64-8994-4d07-9b8c-2ed11650d069.jpeg)
 This picture shows after the player lost the game
 
+
+
 # Lessons learned / Reflection
+
+I learned that creating a game isn't as easy as it looked. Sometimes when I comment about a game because it's bad, I understand now how hard it is. I also learned that I can create simple games like Hungry Snake and other games using python, which is really fun.
 
 # Video Demo
 
