@@ -17,9 +17,9 @@ Snake game is one of the most popular arcade games of all time. In this game, th
 # Modules
 
 # Essential Programming
-  Class : For the snake, food, and main function to run the game.
-  Funciton : Drawing the snake, randomizing food position, etc.
-  Loops : Help running the game (like in the main)
+  1. Class : For the snake, food, and main function to run the game.
+  2. Funciton : Drawing the snake, randomizing food position, etc.
+  3. Loops : Help running the game (like in the main)
 
 # Screenshot of the Application
 ![start game](https://user-images.githubusercontent.com/114073725/212553453-55e6d13c-13fa-4bb5-912e-90b9991cff9e.jpeg) 
