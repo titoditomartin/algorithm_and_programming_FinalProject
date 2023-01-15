@@ -4,28 +4,29 @@ import random
 
 
 class Snake():
-    def __init__(self): # sets the initial length and position of the snake, 
-                        # the direction it is facing (randomly chosen from up, down, left, right), 
-                        # the color, and the score.
+    def __init__(self): 
         self.length = 1 
         self.positions = [((screen_width/2), (screen_height/2))]
         self.direction = random.choice([up, down, left, right])
         self.color = (0, 0, 0)
         self.score = 0
+        # Sets the initial length and position of the snake, 
+        # the direction it is facing (randomly chosen from up, down, left, right), 
+        # the color, and the score.
 
     def get_head_position(self): # Returns the position of the head of the snake.
         return self.positions[0]
         
 
-    def turn(self, point): # Takes in a point (direction) as input and changes the direction of the snake to that point. 
-                           # It also checks if the snake is going in the opposite direction before making the turn.
+    def turn(self, point): 
         if self.length > 1 and (point[0]*-1, point[1]*-1) == self.direction:
             return
         else:
             self.direction = point
+        # Takes in a point (direction) as input and changes the direction of the snake to that point. 
+        # It also checks if the snake is going in the opposite direction before making the turn.
 
-    def move(self): # Updates the position of the snake by moving its head in the direction it is facing. 
-                    # It also checks if the snake is colliding with its own body. If so, the game resets.
+    def move(self): 
         cur = self.get_head_position()
         x,y = self.direction
         new = (((cur[0]+(x*gridsize))%screen_width), (cur[1]+(y*gridsize))%screen_height)
@@ -35,20 +36,24 @@ class Snake():
             self.positions.insert(0,new)
             if len(self.positions) > self.length:
                 self.positions.pop()
+        # Updates the position of the snake by moving its head in the direction it is facing. 
+        # It also checks if the snake is colliding with its own body. If so, the game resets.
 
     def reset(self): # Sets the initial position and length of the snake and its score.
         self.length = 1
         self.positions = [((screen_width/2), (screen_height/2))]
         self.direction = random.choice([up, down, left, right])
         self.score = 0
+        # Sets the initial position and length of the snake and its score.
 
-    def draw(self,surface): # Draws the snake on the surface (screen) passed as input.
+    def draw(self,surface): 
         for p in self.positions:
             r = pygame.Rect((p[0], p[1]), (gridsize,gridsize))
             pygame.draw.rect(surface, self.color, r)
             pygame.draw.rect(surface, (93,216, 228), r, 1)
+        # Draws the snake on the surface (screen) passed as input.
 
-    def handle_keys(self): # Allows the user to control the snake by using the arrow keys.
+    def handle_keys(self): 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 pygame.quit()
@@ -62,6 +67,8 @@ class Snake():
                     self.turn(left)
                 elif event.key == pygame.K_RIGHT:
                     self.turn(right)
+    # Allows the user to control the snake by using the arrow keys.
+    
 
 class Food(): # Creates an object of food that can be displayed on the game screen
     def __init__(self): # Initializes the position, color, and calls the method randomize_position
@@ -92,7 +99,7 @@ def drawGrid(surface): # Creates the game grid on the surface. The grid is drawn
 screen_width = 480
 screen_height = 480
 
-# Gride size inside the screen
+# Grid size inside the screen
 gridsize = 20
 grid_width = screen_width/gridsize
 grid_height = screen_height/gridsize
@@ -104,19 +111,24 @@ left = (-1,0)
 right = (1,0)
 
 def main():
-    pygame.init()
+    pygame.init() # Initialize pygame library
 
-    clock = pygame.time.Clock()
-    screen = pygame.display.set_mode((screen_width, screen_height), 0, 32)
+    clock = pygame.time.Clock() # Creates a clock object for tracking time
+    screen = pygame.display.set_mode((screen_width, screen_height), 0, 32) 
+    # Sets the screen size and creates a window for the game
+
 
     surface = pygame.Surface(screen.get_size())
     surface = surface.convert()
     drawGrid(surface)
+    # Creates a surface and converts it to the appropriate format
+    # drawGrid is probably a function that draws the game grid on the surface
 
     snake = Snake()
     food = Food()
+    # Initializes the snake and food objects for the game
 
-    myfont = pygame.font.SysFont("monospace",16)
+    myfont = pygame.font.SysFont("monospace",16) # Creates a font object with the specified font and size
 
     while (True):
         clock.tick(10) # limit the frame rate to 10 frame per second
