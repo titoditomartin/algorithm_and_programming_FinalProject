@@ -14,6 +14,9 @@ Snake game is one of the most popular arcade games of all time. In this game, th
 ![Activity diagram](https://user-images.githubusercontent.com/114073725/212556517-ede11afc-d842-4b35-8006-759b18c7accc.jpeg)
 
 # Class Diagram
+![Class diagram 1](https://user-images.githubusercontent.com/114073725/212558146-46748168-0fbc-4567-92b7-63d255156fee.jpeg)
+![Class diagram 2](https://user-images.githubusercontent.com/114073725/212558152-152d97be-a9dd-4d06-bf02-d9c95a130f73.jpeg)
+
 
 # Modules
   Modules that were used is :
