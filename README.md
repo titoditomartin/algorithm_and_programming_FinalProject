@@ -15,6 +15,10 @@ Snake game is one of the most popular arcade games of all time. In this game, th
 # Class Diagram
 
 # Modules
+  Modules that were used is :
+  1. Pygame
+  2. Sys
+  3. Random
 
 # Essential Programming
   1. Class : For the snake, food, and main function to run the game.
